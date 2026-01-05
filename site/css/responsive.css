@@ -1,0 +1,97 @@
+@media (max-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .catalog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav {
+        gap: 15px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-contact {
+        text-align: center;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .modal-body {
+        padding: 30px 20px;
+    }
+
+    .modal-car-name {
+        font-size: 28px;
+    }
+
+    .modal-car-price {
+        font-size: 24px;
+    }
+
+    .specs-list {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-close {
+        right: 15px;
+        top: 15px;
+        width: 35px;
+        height: 35px;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .btn-primary {
+        padding: 14px 30px;
+        font-size: 14px;
+    }
+
+    .catalog-filters {
+        gap: 10px;
+    }
+
+    .filter-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+

@@ -1,0 +1,38 @@
+/* Footer Styles */
+.footer {
+    background: #121212;
+    color: #A0A0A0;
+    padding: 40px 0;
+    border-top: 1px solid #333333;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #FFFFFF;
+}
+
+.footer-contact {
+    text-align: right;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    color: #A0A0A0;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-contact p:hover {
+    color: #FFFFFF;
+    transform: translateX(-3px);
+}

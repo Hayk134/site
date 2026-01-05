@@ -1,0 +1,89 @@
+.contact {
+    padding: 100px 0;
+    background: #121212;
+    border-bottom: 1px solid #333333;
+}
+
+.contact-description {
+    font-size: 18px;
+    color: #A0A0A0;
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 16px 20px;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: #A0A0A0;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #D4AF37;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+    background-color: #1E1E1E;
+    transform: translateY(-2px);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-input.error,
+.form-textarea.error {
+    border-color: #ff4444;
+    box-shadow: 0 0 0 3px rgba(255, 68, 68, 0.2);
+    background-color: #1E1E1E;
+}
+
+.form-success-message {
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid #D4AF37;
+    color: #D4AF37;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+
+.form-success-message.show {
+    display: block;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GazanCar — каталог автомобилей из Европы, США и Азии">
+    <meta name="keywords" content="автомобиль из европы, авто из сша, авто из азии, купить машину за границей, подбор авто, доставка авто, GazanCar">
+    <title>Каталог - GazanCar</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="page">
+    <header class="header page__header site-header">
+        <div class="container">
+            <div class="header-content site-header__content">
+                <div class="logo site-header__logo">GazanCar</div>
+                <nav class="nav site-header__nav" aria-label="Основная навигация">
+                    <a href="index.html" class="nav-link site-header__link">Главная</a>
+                    <a href="about.html" class="nav-link site-header__link">О нас</a>
+                    <a href="catalog.html" class="nav-link site-header__link">Каталог</a>
+                    <a href="contact.html" class="nav-link site-header__link">Поддержка</a>
+                    <a href="services.html" class="nav-link site-header__link">Услуги</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="page__main">
+        <section id="catalog" class="catalog page__section">
+        <div class="container">
+            <h2 class="section-title">Каталог машин</h2>
+                <div class="catalog-filters catalog__filters">
+                    <label class="filter-btn catalog__filter-btn">
+                    <input type="radio" name="filter" value="all" checked>
+                    <span>Все</span>
+                </label>
+                    <label class="filter-btn catalog__filter-btn">
+                    <input type="radio" name="filter" value="america">
+                    <span>Америка</span>
+                </label>
+                    <label class="filter-btn catalog__filter-btn">
+                    <input type="radio" name="filter" value="asia">
+                    <span>Азия</span>
+                </label>
+                    <label class="filter-btn catalog__filter-btn">
+                    <input type="radio" name="filter" value="europe">
+                    <span>Европа</span>
+                </label>
+            </div>
+
+                <div class="catalog-grid catalog__grid">
+                    <div class="car-card catalog__card" data-region="asia" data-car="hyundai-creta">
+                        <img src="cars/hynday creta new.png" alt="Hyundai Creta" class="car-card-image">
+                    <div class="car-card-info">
+                        <h3 class="car-name">Hyundai Creta</h3>
+                            <p class="car-price">1 319 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="hyundai-creta">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="asia" data-car="honda-civic">
+                        <img src="cars/honda-civik.webp" alt="Honda Civic" class="car-card-image">
+                    <div class="car-card-info">
+                            <h3 class="car-name">Honda Civic</h3>
+                            <p class="car-price">2 800 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="honda-civic">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="asia" data-car="kia-sportage">
+                        <img src="cars/kia sportage.jpg" alt="Kia Sportage" class="car-card-image">
+                    <div class="car-card-info">
+                            <h3 class="car-name">Kia Sportage</h3>
+                            <p class="car-price">2 900 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="kia-sportage">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="asia" data-car="mazda-cx5">
+                        <img src="cars/mazda cx-5.webp" alt="Mazda CX-5" class="car-card-image">
+                    <div class="car-card-info">
+                            <h3 class="car-name">Mazda CX-5</h3>
+                            <p class="car-price">3 200 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="mazda-cx5">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="asia" data-car="lexus-lx">
+                        <img src="cars/lexus lx.webp" alt="Lexus LX" class="car-card-image">
+                    <div class="car-card-info">
+                            <h3 class="car-name">Lexus LX</h3>
+                            <p class="car-price">8 500 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="lexus-lx">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="asia" data-car="nissan-gtr">
+                        <img src="cars/nissan gt-r.png" alt="Nissan GT-R" class="car-card-image">
+                    <div class="car-card-info">
+                            <h3 class="car-name">Nissan GT-R</h3>
+                            <p class="car-price">12 500 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="nissan-gtr">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="asia" data-car="subaru-outback">
+                        <img src="cars/subaru outback.jpg" alt="Subaru Outback" class="car-card-image">
+                    <div class="car-card-info">
+                            <h3 class="car-name">Subaru Outback</h3>
+                            <p class="car-price">3 500 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="subaru-outback">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="asia" data-car="toyota-yaris">
+                        <img src="cars/toyota yaris.jpg" alt="Toyota Yaris" class="car-card-image">
+                    <div class="car-card-info">
+                            <h3 class="car-name">Toyota Yaris</h3>
+                            <p class="car-price">3 700 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="toyota-yaris">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="america" data-car="ford-mustang">
+                        <img src="cars/ford mustang.jpg" alt="Ford Mustang" class="car-card-image">
+                    <div class="car-card-info">
+                        <h3 class="car-name">Ford Mustang</h3>
+                            <p class="car-price">4 500 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="ford-mustang">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="america" data-car="chevrolet-camaro">
+                        <img src="cars/chevrolet camaro.webp" alt="Chevrolet Camaro" class="car-card-image">
+                    <div class="car-card-info">
+                        <h3 class="car-name">Chevrolet Camaro</h3>
+                            <p class="car-price">4 800 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="chevrolet-camaro">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="america" data-car="dodge-challenger">
+                        <img src="cars/Dodge Challenger.jpg" alt="Dodge Challenger" class="car-card-image">
+                    <div class="car-card-info">
+                        <h3 class="car-name">Dodge Challenger</h3>
+                            <p class="car-price">5 200 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="dodge-challenger">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="america" data-car="cadillac-escalade">
+                        <img src="cars/Cadillac Escalade.jpg" alt="Cadillac Escalade" class="car-card-image">
+                    <div class="car-card-info">
+                        <h3 class="car-name">Cadillac Escalade</h3>
+                            <p class="car-price">12 000 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="cadillac-escalade">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="america" data-car="gmc-sierra">
+                        <img src="cars/GMC Sierra.jpg" alt="GMC Sierra" class="car-card-image">
+                    <div class="car-card-info">
+                            <h3 class="car-name">GMC Sierra</h3>
+                            <p class="car-price">5 500 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="gmc-sierra">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="america" data-car="jeep-wrangler">
+                        <img src="cars/Jeep Wrangler.webp" alt="Jeep Wrangler" class="car-card-image">
+                    <div class="car-card-info">
+                        <h3 class="car-name">Jeep Wrangler</h3>
+                            <p class="car-price">4 200 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="jeep-wrangler">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="america" data-car="lincoln-navigator">
+                        <img src="cars/linkoln navigator.avif" alt="Lincoln Navigator" class="car-card-image">
+                    <div class="car-card-info">
+                        <h3 class="car-name">Lincoln Navigator</h3>
+                            <p class="car-price">11 000 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="lincoln-navigator">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="america" data-car="tesla-model-s">
+                        <img src="cars/tesla model s.jpg" alt="Tesla Model S" class="car-card-image">
+                    <div class="car-card-info">
+                            <h3 class="car-name">Tesla Model S</h3>
+                            <p class="car-price">8 500 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="tesla-model-s">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="europe" data-car="bmw-m5">
+                        <img src="cars/BMW M5.webp" alt="BMW M5" class="car-card-image">
+                    <div class="car-card-info">
+                        <h3 class="car-name">BMW M5</h3>
+                            <p class="car-price">8 500 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="bmw-m5">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="europe" data-car="audi-a8">
+                        <img src="cars/Audi A8.jpeg" alt="Audi A8" class="car-card-image">
+                    <div class="car-card-info">
+                        <h3 class="car-name">Audi A8</h3>
+                            <p class="car-price">9 200 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="audi-a8">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="europe" data-car="mercedes-maybach">
+                        <img src="cars/Mercedes Maybach.jpeg" alt="Mercedes Maybach" class="car-card-image">
+                    <div class="car-card-info">
+                            <h3 class="car-name">Mercedes Maybach</h3>
+                            <p class="car-price">39 900 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="mercedes-maybach">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="europe" data-car="porsche-911">
+                        <img src="cars/Porsche 911.jpg" alt="Porsche 911" class="car-card-image">
+                    <div class="car-card-info">
+                            <h3 class="car-name">Porsche 911</h3>
+                            <p class="car-price">39 500 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="porsche-911">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="europe" data-car="ferrari-488">
+                        <img src="cars/Ferrari 488.jpg" alt="Ferrari 488" class="car-card-image">
+                    <div class="car-card-info">
+                        <h3 class="car-name">Ferrari 488</h3>
+                            <p class="car-price">45 000 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="ferrari-488">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="europe" data-car="lamborghini-huracan">
+                        <img src="cars/Lamborghini Huracan.avif" alt="Lamborghini Huracan" class="car-card-image">
+                    <div class="car-card-info">
+                        <h3 class="car-name">Lamborghini Huracan</h3>
+                            <p class="car-price">52 000 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="lamborghini-huracan">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="europe" data-car="volkswagen-golf">
+                        <img src="cars/Volkswagen Golf.png" alt="Volkswagen Golf" class="car-card-image">
+                    <div class="car-card-info">
+                            <h3 class="car-name">Volkswagen Golf</h3>
+                            <p class="car-price">2 800 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="volkswagen-golf">Подробнее</button>
+                    </div>
+                </div>
+                    <div class="car-card catalog__card" data-region="europe" data-car="volvo-xc90">
+                        <img src="cars/Volvo XC90.jpg" alt="Volvo XC90" class="car-card-image">
+                    <div class="car-card-info">
+                            <h3 class="car-name">Volvo XC90</h3>
+                            <p class="car-price">5 500 000 ₽</p>
+                            <button class="btn-secondary car-details-btn" data-car="volvo-xc90">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer page__footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">GazanCar</div>
+                <div class="footer-contact">
+                    <p>+7 777 777-77-77</p>
+                    <p>г. Ростов-на-Дону, улица Тургеневская 10.6</p>
+                </div>
+            </div>
+            <div class="footer-map">
+                <div class="footer-map__frame">
+                    <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6caa7d4ef11d6cbcf8a547b01a1f49b8f861519a54999314e1cf1a58839e0409&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true">
+                    </script>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="carModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <img id="modal-car-image" src="" alt="" class="modal-car-image">
+                <div class="modal-car-details">
+                    <h2 id="modal-car-name" class="modal-car-name"></h2>
+                    <p id="modal-car-price" class="modal-car-price"></p>
+                    <p id="modal-car-region" class="modal-car-region"></p>
+                    <p id="modal-car-description" class="modal-car-description"></p>
+                    <div class="modal-specs">
+                        <h3>Характеристики:</h3>
+                        <ul id="modal-car-specs" class="specs-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="application/json" id="cars-data">
+    {
+        "hyundai-creta": {
+            "name": "Hyundai Creta",
+            "price": "1 319 000 ₽",
+            "priceWithDelivery": "1 450 000 ₽",
+            "region": "Азия",
+            "image": "cars/hynday creta new.png",
+            "description": "Компактный кроссовер с современным дизайном и отличной проходимостью. Идеален для городских поездок и загородных путешествий.",
+            "specs": {
+                "Двигатель": "2.0 л, 150 л.с.",
+                "Коробка передач": "Автоматическая",
+                "Привод": "Передний",
+                "Расход топлива": "7.5 л/100км",
+                "Год выпуска": "2023",
+                "Пробег": "0 км",
+                "Цвет": "Белый"
+            }
+        },
+        "honda-civic": {
+            "name": "Honda Civic",
+            "price": "2 800 000 ₽",
+            "priceWithDelivery": "3 080 000 ₽",
+            "region": "Азия",
+            "image": "cars/honda-civik.webp",
+            "description": "Спортивный седан с турбированным двигателем и динамичным характером. Отличный выбор для любителей активной езды.",
+            "specs": {
+                "Двигатель": "1.5 л Turbo, 182 л.с.",
+                "Коробка передач": "Вариатор",
+                "Привод": "Передний",
+                "Расход топлива": "6.5 л/100км",
+                "Год выпуска": "2023",
+                "Пробег": "5000 км",
+                "Цвет": "Серый"
+            }
+        },
+        "kia-sportage": {
+            "name": "Kia Sportage",
+            "price": "2 900 000 ₽",
+            "priceWithDelivery": "3 190 000 ₽",
+            "region": "Азия",
+            "image": "cars/kia sportage.jpg",
+            "description": "Современный кроссовер с просторным салоном и богатой комплектацией. Отличное соотношение цены и качества.",
+            "specs": {
+                "Двигатель": "2.0 л, 150 л.с.",
+                "Коробка передач": "Автоматическая",
+                "Привод": "Полный",
+                "Расход топлива": "8.2 л/100км",
+                "Год выпуска": "2023",
+                "Пробег": "0 км",
+                "Цвет": "Черный"
+            }
+        },
+        "mazda-cx5": {
+            "name": "Mazda CX-5",
+            "price": "3 200 000 ₽",
+            "priceWithDelivery": "3 520 000 ₽",
+            "region": "Азия",
+            "image": "cars/mazda cx-5.webp",
+            "description": "Элегантный кроссовер с фирменным дизайном Mazda и отличной динамикой. Премиальное качество сборки.",
+            "specs": {
+                "Двигатель": "2.5 л, 192 л.с.",
+                "Коробка передач": "Автоматическая",
+                "Привод": "Полный",
+                "Расход топлива": "7.8 л/100км",
+                "Год выпуска": "2023",
+                "Пробег": "0 км",
+                "Цвет": "Красный"
+            }
+        },
+        "lexus-lx": {
+            "name": "Lexus LX",
+            "price": "8 500 000 ₽",
+            "priceWithDelivery": "9 350 000 ₽",
+            "region": "Азия",
+            "image": "cars/lexus lx.webp",
+            "description": "Роскошный внедорожник премиум-класса с непревзойденным комфортом и надежностью.",
+            "specs": {
+                "Двигатель": "5.7 л V8, 383 л.с.",
+                "Коробка передач": "Автоматическая",
+                "Привод": "Полный",
+                "Расход топлива": "14.5 л/100км",
+                "Год выпуска": "2023",
+                "Пробег": "0 км",
+                "Цвет": "Белый"
+            }
+        },
+        "nissan-gtr": {
+            "name": "Nissan GT-R",
+            "price": "12 500 000 ₽",
+            "priceWithDelivery": "13 750 000 ₽",
+            "region": "Азия",
+            "image": "cars/nissan gt-r.png",
+            "description": "Легендарный суперкар с невероятной мощностью и технологиями. Истинная японская инженерия в действии.",
+            "specs": {
+                "Двигатель": "3.8 л V6 Twin Turbo, 600 л.с.",
+                "Коробка передач": "Робот (6 ступеней)",
+                "Привод": "Полный",
+                "Разгон до 100": "2.7 сек",
+                "Максимальная скорость": "315 км/ч",
+                "Год выпуска": "2023",
+                "Пробег": "1000 км",
+                "Цвет": "Серый"
+            }
+        },
+        "subaru-outback": {
+            "name": "Subaru Outback",
+            "price": "3 500 000 ₽",
+            "priceWithDelivery": "3 850 000 ₽",
+            "region": "Азия",
+            "image": "cars/subaru outback.jpg",
+            "description": "Универсал с полным приводом и отличной проходимостью. Идеален для активного образа жизни.",
+            "specs": {
+                "Двигатель": "2.5 л, 175 л.с.",
+                "Коробка передач": "Вариатор",
+                "Привод": "Полный",
+                "Расход топлива": "7.8 л/100км",
+                "Год выпуска": "2023",
+                "Пробег": "0 км",
+                "Цвет": "Синий"
+            }
+        },
+        "toyota-yaris": {
+            "name": "Toyota Yaris",
+            "price": "3 700 000 ₽",
+            "priceWithDelivery": "4 070 000 ₽",
+            "region": "Азия",
+            "image": "cars/toyota yaris.jpg",
+            "description": "Экономичный и надежный городской хэтчбек с отличной маневренностью и низким расходом топлива.",
+            "specs": {
+                "Двигатель": "1.5 л, 110 л.с.",
+                "Коробка передач": "Вариатор",
+                "Привод": "Передний",
+                "Расход топлива": "5.2 л/100км",
+                "Год выпуска": "2024",
+                "Пробег": "0 км",
+                "Цвет": "Черный"
+            }
+        },
+        "ford-mustang": {
+            "name": "Ford Mustang",
+            "price": "4 500 000 ₽",
+            "priceWithDelivery": "4 950 000 ₽",
+            "region": "Америка",
+            "image": "cars/ford mustang.jpg",
+            "description": "Легендарный американский мускул-кар с мощным двигателем и агрессивным дизайном.",
+            "specs": {
+                "Двигатель": "5.0 л V8, 450 л.с.",
+                "Коробка передач": "Механическая",
+                "Привод": "Задний",
+                "Разгон до 100": "4.3 сек",
+                "Максимальная скорость": "250 км/ч",
+                "Год выпуска": "2023",
+                "Пробег": "0 км",
+                "Цвет": "Синий"
+            }
+        },
+        "chevrolet-camaro": {
+            "name": "Chevrolet Camaro",
+            "price": "4 800 000 ₽",
+            "priceWithDelivery": "5 280 000 ₽",
+            "region": "Америка",
+            "image": "cars/chevrolet camaro.webp",
+            "description": "Спортивный купе с мощным двигателем и узнаваемым дизайном. Истинный американский спорткар.",
+            "specs": {
+                "Двигатель": "6.2 л V8, 455 л.с.",
+                "Коробка передач": "Автоматическая",
+                "Привод": "Задний",
+                "Разгон до 100": "4.0 сек",
+                "Максимальная скорость": "290 км/ч",
+                "Год выпуска": "2023",
+                "Пробег": "0 км",
+                "Цвет": "Желтый"
+            }
+        },
+        "dodge-challenger": {
+            "name": "Dodge Challenger",
+            "price": "5 200 000 ₽",
+            "priceWithDelivery": "5 720 000 ₽",
+            "region": "Америка",
+            "image": "cars/Dodge Challenger.jpg",
+            "description": "Мощный мускул-кар с агрессивным дизайном и невероятной динамикой. Для настоящих ценителей скорости.",
+            "specs": {
+                "Двигатель": "6.4 л V8 HEMI, 485 л.с.",
+                "Коробка передач": "Автоматическая",
+                "Привод": "Задний",
+                "Разгон до 100": "3.8 сек",
+                "Максимальная скорость": "298 км/ч",
+                "Год выпуска": "2023",
+                "Пробег": "0 км",
+                "Цвет": "Оранжевый"
+            }
+        },
+        "cadillac-escalade": {
+            "name": "Cadillac Escalade",
+            "price": "12 000 000 ₽",
+            "priceWithDelivery": "13 200 000 ₽",
+            "region": "Америка",
+            "image": "cars/Cadillac Escalade.jpg",
+            "description": "Роскошный полноразмерный внедорожник премиум-класса с максимальным комфортом и технологиями.",
+            "specs": {
+                "Двигатель": "6.2 л V8, 420 л.с.",
+                "Коробка передач": "Автоматическая",
+                "Привод": "Полный",
+                "Расход топлива": "15.2 л/100км",
+                "Год выпуска": "2023",
+                "Пробег": "0 км",
+                "Цвет": "Черный"
+            }
+        },
+        "gmc-sierra": {
+            "name": "GMC Sierra",
+            "price": "5 500 000 ₽",
+            "priceWithDelivery": "6 050 000 ₽",
+            "region": "Америка",
+            "image": "cars/GMC Sierra.jpg",
+            "description": "Мощный пикап с отличной проходимостью и грузоподъемностью. Идеален для работы и отдыха.",
+            "specs": {
+                "Двигатель": "5.3 л V8, 355 л.с.",
+                "Коробка передач": "Автоматическая",
+                "Привод": "Полный",
+                "Расход топлива": "13.5 л/100км",
+                "Год выпуска": "2023",
+                "Пробег": "0 км",
+                "Цвет": "Белый"
+            }
+        },
+        "jeep-wrangler": {
+            "name": "Jeep Wrangler",
+            "price": "4 200 000 ₽",
+            "priceWithDelivery": "4 620 000 ₽",
+            "region": "Америка",
+            "image": "cars/Jeep Wrangler.webp",
+            "description": "Легендарный внедорожник с отличной проходимостью. Для настоящих любителей бездорожья.",
+            "specs": {
+                "Двигатель": "3.6 л V6, 285 л.с.",
+                "Коробка передач": "Автоматическая",
+                "Привод": "Полный",
+                "Расход топлива": "11.2 л/100км",
+                "Год выпуска": "2023",
+                "Пробег": "0 км",
+                "Цвет": "Красный"
+            }
+        },
+        "lincoln-navigator": {
+            "name": "Lincoln Navigator",
+            "price": "11 000 000 ₽",
+            "priceWithDelivery": "12 100 000 ₽",
+            "region": "Америка",
+            "image": "cars/linkoln navigator.avif",
+            "description": "Роскошный полноразмерный внедорожник с премиальным интерьером и передовыми технологиями.",
+            "specs": {
+                "Двигатель": "3.5 л V6 Twin Turbo, 450 л.с.",
+                "Коробка передач": "Автоматическая",
+                "Привод": "Полный",
+                "Расход топлива": "13.8 л/100км",
+                "Год выпуска": "2023",
+                "Пробег": "0 км",
+                "Цвет": "Черный"
+            }
+        },
+        "tesla-model-s": {
+            "name": "Tesla Model S",
+            "price": "8 500 000 ₽",
+            "priceWithDelivery": "9 350 000 ₽",
+            "region": "Америка",
+            "image": "cars/tesla model s.jpg",
+            "description": "Электрический седан премиум-класса с невероятной динамикой и автопилотом. Будущее уже здесь.",
+            "specs": {
+                "Двигатель": "Электрический, 670 л.с.",
+                "Коробка передач": "Одноступенчатая",
+                "Привод": "Полный",
+                "Запас хода": "652 км",
+                "Разгон до 100": "2.1 сек",
+                "Год выпуска": "2023",
+                "Пробег": "0 км",
+                "Цвет": "Белый"
+            }
+        },
+        "bmw-m5": {
+            "name": "BMW M5",
+            "price": "8 500 000 ₽",
+            "priceWithDelivery": "9 350 000 ₽",
+            "region": "Европа",
+            "image": "cars/BMW M5.webp",
+            "description": "Спортивный седан с мощным двигателем и отличной динамикой. Идеальное сочетание комфорта и скорости.",
+            "specs": {
+                "Двигатель": "4.4 л V8 Twin Turbo, 600 л.с.",
+                "Коробка передач": "Автоматическая",
+                "Привод": "Полный",
+                "Разгон до 100": "3.4 сек",
+                "Максимальная скорость": "305 км/ч",
+                "Год выпуска": "2023",
+                "Пробег": "0 км",
+                "Цвет": "Синий"
+            }
+        },
+        "audi-a8": {
+            "name": "Audi A8",
+            "price": "9 200 000 ₽",
+            "priceWithDelivery": "10 120 000 ₽",
+            "region": "Европа",
+            "image": "cars/Audi A8.jpeg",
+            "description": "Роскошный седан премиум-класса с максимальным комфортом и передовыми технологиями.",
+            "specs": {
+                "Двигатель": "3.0 л V6 TFSI, 340 л.с.",
+                "Коробка передач": "Автоматическая",
+                "Привод": "Полный",
+                "Расход топлива": "8.5 л/100км",
+                "Год выпуска": "2023",
+                "Пробег": "0 км",
+                "Цвет": "Черный"
+            }
+        },
+        "mercedes-maybach": {
+            "name": "Mercedes Maybach",
+            "price": "39 900 000 ₽",
+            "priceWithDelivery": "43 890 000 ₽",
+            "region": "Европа",
+            "image": "cars/Mercedes Maybach.jpeg",
+            "description": "Исключительный седан люкс-класса с непревзойденным комфортом и роскошью. Для самых взыскательных клиентов.",
+            "specs": {
+                "Двигатель": "6.0 л V12 Biturbo, 630 л.с.",
+                "Коробка передач": "Автоматическая",
+                "Привод": "Задний",
+                "Расход топлива": "12.5 л/100км",
+                "Год выпуска": "2023",
+                "Пробег": "0 км",
+                "Цвет": "Черный"
+            }
+        },
+        "porsche-911": {
+            "name": "Porsche 911",
+            "price": "39 500 000 ₽",
+            "priceWithDelivery": "43 450 000 ₽",
+            "region": "Европа",
+            "image": "cars/Porsche 911.jpg",
+            "description": "Легендарный спорткар с идеальным балансом и невероятной динамикой. Икона автомобилестроения.",
+            "specs": {
+                "Двигатель": "3.8 л Flat-6 Twin Turbo, 650 л.с.",
+                "Коробка передач": "PDK (7 ступеней)",
+                "Привод": "Полный",
+                "Разгон до 100": "2.7 сек",
+                "Максимальная скорость": "330 км/ч",
+                "Год выпуска": "2023",
+                "Пробег": "0 км",
+                "Цвет": "Серый"
+            }
+        },
+        "ferrari-488": {
+            "name": "Ferrari 488",
+            "price": "45 000 000 ₽",
+            "priceWithDelivery": "49 500 000 ₽",
+            "region": "Европа",
+            "image": "cars/Ferrari 488.jpg",
+            "description": "Итальянский суперкар с невероятной мощностью и страстью. Истинное воплощение скорости и роскоши.",
+            "specs": {
+                "Двигатель": "3.9 л V8 Twin Turbo, 670 л.с.",
+                "Коробка передач": "Робот (7 ступеней)",
+                "Привод": "Задний",
+                "Разгон до 100": "3.0 сек",
+                "Максимальная скорость": "330 км/ч",
+                "Год выпуска": "2023",
+                "Пробег": "500 км",
+                "Цвет": "Красный"
+            }
+        },
+        "lamborghini-huracan": {
+            "name": "Lamborghini Huracan",
+            "price": "52 000 000 ₽",
+            "priceWithDelivery": "57 200 000 ₽",
+            "region": "Европа",
+            "image": "cars/Lamborghini Huracan.avif",
+            "description": "Экстремальный суперкар с агрессивным дизайном и невероятной мощностью. Для настоящих ценителей скорости.",
+            "specs": {
+                "Двигатель": "5.2 л V10, 640 л.с.",
+                "Коробка передач": "Робот (7 ступеней)",
+                "Привод": "Полный",
+                "Разгон до 100": "2.9 сек",
+                "Максимальная скорость": "325 км/ч",
+                "Год выпуска": "2023",
+                "Пробег": "300 км",
+                "Цвет": "Оранжевый"
+            }
+        },
+        "volkswagen-golf": {
+            "name": "Volkswagen Golf",
+            "price": "2 800 000 ₽",
+            "priceWithDelivery": "3 080 000 ₽",
+            "region": "Европа",
+            "image": "cars/Volkswagen Golf.png",
+            "description": "Классический хэтчбек с отличным качеством сборки и надежностью. Проверенное временем качество.",
+            "specs": {
+                "Двигатель": "1.4 л TSI, 150 л.с.",
+                "Коробка передач": "Автоматическая",
+                "Привод": "Передний",
+                "Расход топлива": "6.0 л/100км",
+                "Год выпуска": "2023",
+                "Пробег": "0 км",
+                "Цвет": "Белый"
+            }
+        },
+        "volvo-xc90": {
+            "name": "Volvo XC90",
+            "price": "5 500 000 ₽",
+            "priceWithDelivery": "6 050 000 ₽",
+            "region": "Европа",
+            "image": "cars/Volvo XC90.jpg",
+            "description": "Премиальный внедорожник с акцентом на безопасность и комфорт. Скандинавское качество и дизайн.",
+            "specs": {
+                "Двигатель": "2.0 л T8 Hybrid, 407 л.с.",
+                "Коробка передач": "Автоматическая",
+                "Привод": "Полный",
+                "Расход топлива": "2.1 л/100км",
+                "Год выпуска": "2023",
+                "Пробег": "0 км",
+                "Цвет": "Серый"
+            }
+        }
+    }
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

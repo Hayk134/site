@@ -1,0 +1,177 @@
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .header-content {
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 10px;
+    }
+
+    .hero-image {
+        height: 360px;
+    }
+
+    .catalog-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .map-section__frame iframe {
+        min-height: 320px;
+    }
+
+    .footer-map__frame iframe {
+        min-height: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .nav {
+        gap: 15px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .hero-image {
+        height: 300px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-contact {
+        text-align: center;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .modal-body {
+        padding: 30px 20px;
+    }
+
+    .modal-car-name {
+        font-size: 28px;
+    }
+
+    .modal-car-price {
+        font-size: 24px;
+    }
+
+    .specs-list {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-close {
+        right: 15px;
+        top: 15px;
+        width: 35px;
+        height: 35px;
+        font-size: 28px;
+    }
+
+    .map-section__frame iframe {
+        min-height: 280px;
+    }
+
+    .footer-map__frame iframe {
+        min-height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .btn-primary {
+        padding: 14px 30px;
+        font-size: 14px;
+    }
+
+    .catalog-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .catalog-filters {
+        gap: 6px;
+        margin-bottom: 24px;
+    }
+
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .car-card-info {
+        padding: 16px;
+    }
+
+    .car-name {
+        font-size: 16px;
+    }
+
+    .car-price {
+        font-size: 18px;
+    }
+
+    .car-card-image {
+        height: 200px;
+    }
+
+    .map-section__frame iframe {
+        min-height: 240px;
+    }
+
+    .footer-map__frame iframe {
+        min-height: 220px;
+    }
+}

@@ -1,0 +1,159 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+.modal-content {
+    background-color: #1E1E1E;
+    margin: 20px auto;
+    padding: 0;
+    border-radius: 12px;
+    max-width: 650px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    border: 2px solid #333333;
+    position: relative;
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.modal[style*="flex"] .modal-content {
+    transform: scale(1);
+}
+
+
+
+.modal-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2001;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D4AF37;
+    border-radius: 6px;
+    border: 2px solid #D4AF37;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+    background-color: #B8952E;
+    border-color: #B8952E;
+    transform: rotate(90deg) scale(1.1);
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-car-image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: block;
+    border: 2px solid #333333;
+}
+
+.modal-car-details {
+    color: #A0A0A0;
+}
+
+.modal-car-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.modal-car-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #D4AF37;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.modal-car-price span {
+    display: inline-block;
+}
+
+.modal-car-region {
+    font-size: 14px;
+    color: #A0A0A0;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    background: #121212;
+    border-radius: 3px;
+    display: inline-block;
+    border: 2px solid #333333;
+}
+
+.modal-car-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #A0A0A0;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #121212;
+    border-radius: 3px;
+    border: 2px solid #333333;
+}
+
+.modal-specs {
+    margin-top: 20px;
+}
+
+.modal-specs h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.specs-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.specs-list li {
+    padding: 8px 12px;
+    background: #121212;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 1.5;
+    border: 2px solid #333333;
+    margin-bottom: 5px;
+}
+
+.specs-list li strong {
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 5px;
+}
